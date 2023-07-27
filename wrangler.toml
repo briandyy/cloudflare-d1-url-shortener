@@ -1,4 +1,4 @@
-name = "curly-darkness-83eb"
+name = "pina-link-shortener"
 main = "src/worker.js"
 compatibility_date = "2023-07-24"
 
@@ -49,3 +49,8 @@ compatibility_date = "2023-07-24"
 # [[migrations]]
 # tag = "v1"
 # new_classes = ["MyDurableObject"]
+
+[[d1_databases]]
+binding = "DB" # i.e. available in your Worker on env.DB
+database_name = ""
+database_id = ""

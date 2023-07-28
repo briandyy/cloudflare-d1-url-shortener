@@ -16,6 +16,10 @@ function generate_new_shorten() {
 	return result;
 }
 
+export async function getHostname(request) {
+	return new URL(request.url).hostname;
+}
+
 function is_valid_url(string) {
 	try {
 		new URL(string);
@@ -57,6 +61,7 @@ app.post('/api/new_shorten', async (c) => {
 		return c.text('Failed to generate shortened URL');
 	}
 	const hostname = await getHostname(c.req);
+	console.log(c.text("https://"+hostname + '/' + shorten));
 	return c.text("https://"+hostname + '/' + shorten);
 });
 

@@ -1,4 +1,4 @@
-name = "pina-link-shortener"
+name = "gfd-link-shortener"
 main = "src/worker.js"
 compatibility_date = "2023-07-24"
 

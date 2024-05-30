@@ -52,5 +52,5 @@ compatibility_date = "2023-07-24"
 
 [[d1_databases]]
 binding = "DB" # i.e. available in your Worker on env.DB
-database_name = ""
-database_id = ""
+database_name = "url-shortner"
+database_id = "14386217-85de-464f-9b34-edb83caff167"

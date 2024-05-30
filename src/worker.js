@@ -78,7 +78,7 @@ app.get('/:url_id', async (c) => {
 });
 
 app.get("/", async(c) =>{
-	return c.redirect("https://shorten.link.pinapelz.com") // TODO: Change this to your own frontend
+	return c.redirect("https://gfd-link-shortener.afiffebriandy.workers.dev") // TODO: Change this to your own frontend
 });
 
 export default app;
